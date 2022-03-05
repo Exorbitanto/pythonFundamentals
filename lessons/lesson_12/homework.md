@@ -66,7 +66,7 @@ Let the user input the name of the currency to convert to. Example: EUR or MDL
 * You should create CurrencyConversion object, that will store all information about each conversion.
     * Example. CurrencyConversion(from="MDL", to="EUR", rate=0.049175765442905, inverse_rate=20.335219818002, name="
       EUR")
-* In order to have the ability to sort CurrencyConversion objects, implement `__gt__, __lt__, __eq__, __le__, __ge__`
+* In order to have the ability to sort CurrencyConversion objects, implement `__ne__, __lt__, __eq__, __le__, __ge__`
   functions. These functions should compare the rates of the CurrencyConversion objects.
 * Have a CurrencyConversionService that will manage all the currency conversion information, and should have at least
   this method below.
